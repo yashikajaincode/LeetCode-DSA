@@ -1,3 +1,12 @@
+from typing import Optional
+from typing import Any
+
+class TreeNode:
+    def __init__(self, val: Any = 0, left: Optional['TreeNode'] = None, right: Optional['TreeNode'] = None):
+        self.val = val
+        self.left = left
+        self.right = right
+
 class Solution:
     def longestUnivaluePath(self, root: Optional[TreeNode]) -> int:
         self.ans = 0
