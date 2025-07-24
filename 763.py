@@ -1,3 +1,6 @@
+from typing import List
+
+
 class Solution:
     def partitionLabels(self, s: str) -> List[int]:
         last = {ch: i for i, ch in enumerate(s)}
